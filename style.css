@@ -1,0 +1,105 @@
+body{
+  font-family: 'Karla', sans-serif;
+  background-color: hsl(204, 43%, 93%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+}
+h2{
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+p{
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(204, 43%, 93%);
+}
+span{
+  font-size: 35px;
+  font-weight:700;
+  color: white;
+}
+.text-1{
+  color: hsl(71, 73%, 54%);
+}
+.paragh-1{
+  color: hsl(218, 22%, 67%);
+}
+button{
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+
+  width: 90%;
+  height: 35px;
+  margin-right: auto;
+  margin-left: auto;
+
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.card-parent{
+  display: grid;
+  grid-template-columns: [X0] 1fr [x1] 1fr [x2] 1fr;
+  grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr;
+
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+  margin-bottom: auto;
+
+
+}
+.card1{
+  background-color: white;
+  grid-column-start: x0;
+  grid-column-end: x3;
+
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
+.card2{
+  grid-column-start: x0;
+  grid-column-end: x3;
+  grid-row: y1/y2;
+
+  display: flex;
+}
+.item2{
+  background-color: hsl(179, 62%, 43%);
+  flex:1;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+
+  border-bottom-left-radius: 15px;
+
+}
+
+.item3{
+  background-color: #4ABEBD;
+  flex:1;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+
+  border-bottom-right-radius: 15px;
+
+}
