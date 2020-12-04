@@ -48,7 +48,7 @@ button{
 
 .card-parent{
   display: grid;
-  grid-template-columns: [X0] 1fr [x1] 1fr [x2] 1fr;
+  grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr[x3];
   grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr;
 
   width: 50%;
@@ -56,8 +56,6 @@ button{
   margin-left: auto;
   margin-top: 5%;
   margin-bottom: auto;
-
-
 }
 .card1{
   background-color: white;
@@ -101,5 +99,57 @@ button{
   padding-bottom: 3%;
 
   border-bottom-right-radius: 15px;
+
+}
+
+/*MOBILE SCREEN*/
+@media only screen and (max-width:400px){
+  .card-parent{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top:20%;
+  }
+  .card1{
+    flex:1;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .card2{
+    flex:1;
+    flex-direction: column;
+  }
+  .item2{
+    flex:1;
+    border-bottom-left-radius: 0px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .item3{
+    flex:1;
+    border-bottom-right-radius: 0px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  h1{
+    font-size: 16px;
+  }
+  h2{
+    font-size: 14px;
+  }
+  p{
+    font-size: 12px;
+  }
+  span{
+    font-size: 16px;
+  }
 
 }
