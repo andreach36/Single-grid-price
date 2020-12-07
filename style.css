@@ -1,28 +1,31 @@
 body{
   font-family: 'Karla', sans-serif;
   background-color: hsl(204, 43%, 93%);
+/*para que se ajute al alto de la pantalla del dispositivo*/
+  height: 100vh;
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 h1{
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: hsl(179, 62%, 43%);
 }
 h2{
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   color: white;
 }
 p{
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: hsl(204, 43%, 93%);
 }
 span{
-  font-size: 35px;
+  font-size: 2.18rem;
   font-weight:700;
   color: white;
 }
@@ -49,13 +52,14 @@ button{
 .card-parent{
   display: grid;
   grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr[x3];
-  grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr;
+  grid-template-rows: [y0] 1fr [y1] 1fr [y2];
 
   width: 50%;
-  margin-right: auto;
+  height: auto;
+  /* margin-right: auto;
   margin-left: auto;
   margin-top: 5%;
-  margin-bottom: auto;
+  margin-bottom: auto; */
 }
 .card1{
   background-color: white;
@@ -103,12 +107,13 @@ button{
 }
 
 /*MOBILE SCREEN*/
-@media only screen and (max-width:400px){
+@media only screen and (max-width:414px){
   .card-parent{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     margin-top:20%;
+    margin-bottom:20%;
   }
   .card1{
     flex:1;
